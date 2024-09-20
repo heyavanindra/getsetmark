@@ -19,10 +19,10 @@ export function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
             <HoveredLink href="/android-dev">Android Devlopment</HoveredLink>
             <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/Smo">Smo</HoveredLink>
+            <HoveredLink href="/smo">Smo</HoveredLink>
           </div>
         </MenuItem>
-        <Link href={"/contectus"}><MenuItem setActive={setActive} active={active} item="Contact us"></MenuItem></Link>
+        <Link href={"/contactus"}><MenuItem setActive={setActive} active={active} item="Contact us"></MenuItem></Link>
         
         
       </Menu>
