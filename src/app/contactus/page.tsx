@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
    
-      <div className="h-screen flex items-center justify-center mt-32 lg:mt-20">
+      <div className="min-h-screen flex items-center justify-center overflow-y-auto mt-32 lg:mt-20">
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"></Spotlight>
         <div className="w-full max-w-[900px] text-white p-6  rounded-lg shadow-lg">
