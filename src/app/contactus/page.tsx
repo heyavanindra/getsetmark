@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import { Input } from "@/components/ui/input";
-import { BackgroundBeams, Spotlight } from "@/app/components/ui/background-beams"
+import { BackgroundBeams } from "@/app/components/ui/background-beams"
 
 const Contact = () => {
   return (
