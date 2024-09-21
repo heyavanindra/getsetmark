@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
    
-      <div className="min-h-screen flex items-center justify-center overflow-y-auto mt-32 lg:mt-20">
+      <div className="min-h-screen flex items-center justify-center overflow-y-auto mt-12 lg:mt-20">
       
         <div className="w-full max-w-[900px] text-white p-6  rounded-lg shadow-lg">
           <div className="w-auto md:w-[800px] flex flex-col">
