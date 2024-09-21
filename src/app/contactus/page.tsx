@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { Input } from "@/components/ui/input";
 import { Spotlight } from "../components/ui/Spotlight";
@@ -21,26 +22,26 @@ const Contact = () => {
             <div className="mt-7 text-black md:grid grid-cols-2 gap-6">
               <div>
                 <p className="py-3 text-white text-2xl">Name</p>
-                <Input type="text" className="border border-white text-slate-500" placeholder="Enter Your Name"/>
+                <Input type="text" className="border-2 border-gray-800  text-slate-500 rounded-xl" placeholder="Enter Your Name" required/>
               </div>
               <div>
-                <p className="py-3 text-white text-2xl">Topic</p>
-                <Input type="text" className="border border-white text-slate-500" placeholder="Enter Your Name"/>
+                <p className="py-3 text-white text-2xl">Phone Number</p>
+                <Input type="text" className="border-2 border-gray-800 text-slate-500 rounded-xl" placeholder="Enter Your Phone Number" required/>
               </div>
             </div>
-            <div className="mt-7">
+            <div className="mt-2">
               <p className="py-3 text-white text-2xl">Email</p>
-              <Input type="text" className="border border-white text-slate-500" placeholder="Enter Your Name"/>
+              <Input type="text" className="border-2 border-gray-800 text-slate-500 rounded-xl" placeholder="Enter Your Email" required/>
             </div>
-            <div className="mt-7">
+            <div className="mt-2">
               <p className="py-3 text-white text-2xl">Message</p>
               <textarea
                 placeholder="Message"
-                className="h-[100px] pl-4 w-full border bg-black border-white text-slate-500"
+                className="h-[100px] pl-4 w-full border-2 border-gray-800 bg-black text-slate-500 rounded-xl"
               />
             </div>
             <div className="py-4 text-center">
-            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-2xl border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 ">
           Submit
         </button>
             </div>

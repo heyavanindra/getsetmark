@@ -22,7 +22,7 @@ export function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/smo">Smo</HoveredLink>
           </div>
         </MenuItem>
-        <Link href={"/contactus"}><MenuItem setActive={setActive} active={active} item="Contact us"></MenuItem></Link>
+        <Link href={"/contactus"}><MenuItem setActive={setActive} active={active} item="Contact Us"></MenuItem></Link>
         
         
       </Menu>
