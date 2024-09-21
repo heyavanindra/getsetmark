@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import { Input } from "@/components/ui/input";
-import { Spotlight } from "../components/ui/Spotlight";
+import { BackgroundBeams, Spotlight } from "@/app/components/ui/background-beams"
 
 const Contact = () => {
   return (
@@ -48,6 +48,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <BackgroundBeams></BackgroundBeams>
     </>
   );
 };
