@@ -4,25 +4,37 @@ import { Input } from "@/components/ui/input";
 import { BackgroundBeams } from "@/app/components/ui/background-beams";
 import { useState } from "react";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const Contact = () => {
   const [user, setUser] = useState({
     name: "",
-    phone: '',
+    phone: "",
     email: "",
     Message: "",
   });
- 
-   async function submit() {
-     try {
-      const response = await axios.post(`https://getsetmark.vercel.app/api/contact-us`, user)
-     console.log(response);
-     } catch (error) {
+  const router = useRouter();
+  async function submit() {
+    console.log(process.env.NEXT_PUBLIC_URI);
+    try {
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_URI}/api/contact-us`,
+        user
+      );
+      console.log(response);
+      if (response.data && response.data.success === true) {
+        try {
+          router.push("/thank-you-page");
+        } catch (error) {
+          console.log("error in redirect");
+        }
+      } else {
+        alert("enter correct credentials");
+      }
+    } catch (error) {
       console.log("error happend very big");
-      
-     }
-     
     }
+  }
 
   return (
     <>

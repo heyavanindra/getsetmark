@@ -5,6 +5,7 @@ import { Navbar } from "./components/navbar";
 import Footer from "./components/Footer";
 
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <Navbar></Navbar>
         {children}
       <Footer></Footer>
+     
         
       </body>
     </html>

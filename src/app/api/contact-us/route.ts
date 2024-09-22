@@ -4,7 +4,8 @@ import Messagemodel from "@/model/User";
 
 export async function POST(request:Request) {
     await dbconnect()
-  const {name, phone, email, message}=   await request.json()
+  try {
+    const {name, phone, email, message}=   await request.json()
   const Message = new Messagemodel({
     name,
     phone,
@@ -17,7 +18,12 @@ export async function POST(request:Request) {
   return Response.json({
     success:true,
     message:"thank you for choosing us"
-  })
+  },{status:200})
+  } catch (error) {
+    console.log("error happened");
+    
+    
+  }
 
 }
 
