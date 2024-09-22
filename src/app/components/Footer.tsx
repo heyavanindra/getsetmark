@@ -2,6 +2,7 @@ import React from "react";
 import { Input } from "@/components/ui/input";
 import ItemContainer from "./propsItem/ItemContainer";
 import Link from "next/link";
+import { useState } from "react";
 
 const Footer = () => {
   return (
