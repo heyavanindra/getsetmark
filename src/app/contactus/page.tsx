@@ -27,12 +27,14 @@ const Contact = () => {
           router.push("/thank-you-page");
         } catch (error) {
           console.log("error in redirect");
+          alert("error while sending response")
         }
       } else {
         alert("enter correct credentials");
       }
     } catch (error) {
       console.log("error happend very big");
+      alert("error while sending response")
     }
   }
 
@@ -51,7 +53,7 @@ const Contact = () => {
               <p className="text-gray-600 font-serif">
                 Some context intro stuff
               </p>
-              {JSON.stringify(user)}
+              
             </div>
           </div>
           <div className="w-full">
