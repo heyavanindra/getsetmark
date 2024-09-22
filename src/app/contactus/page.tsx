@@ -15,7 +15,7 @@ const Contact = () => {
  
    async function submit() {
      try {
-      const response = await axios.post(`http://localhost:3000/api/contact-us`, user)
+      const response = await axios.post(`https://getsetmark.vercel.app/api/contact-us`, user)
      console.log(response);
      } catch (error) {
       console.log("error happend very big");
