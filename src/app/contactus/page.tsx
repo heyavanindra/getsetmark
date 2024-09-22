@@ -24,7 +24,7 @@ const Contact = () => {
       console.log(response);
       if (response.data && response.data.success === true) {
         try {
-          router.push("/thank-you-page");
+          router.push("/thankyouforchossingus");
         } catch (error) {
           console.log("error in redirect");
           alert("error while sending response")
