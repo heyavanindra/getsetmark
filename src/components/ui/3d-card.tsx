@@ -1,6 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+
 import Image from "next/image";
 import React, {
   createContext,
@@ -47,7 +49,7 @@ export const CardContainer = ({
   };
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
-      <div
+      <motion.div
         className={cn(
           "py-10 flex items-center justify-center",
           containerClassName
@@ -55,6 +57,13 @@ export const CardContainer = ({
         style={{
           perspective: "1000px",
         }}
+        variants={{
+          hidden:{opacity:0,y:30},
+          visible:{opacity:1,y:0}
+        }}
+        initial='hidden'
+        animate="visible"
+        transition={{duration:1, delay:1.5}}
       >
         <div
           ref={containerRef}
@@ -71,7 +80,7 @@ export const CardContainer = ({
         >
           {children}
         </div>
-      </div>
+      </motion.div>
     </MouseEnterContext.Provider>
   );
 };

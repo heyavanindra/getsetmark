@@ -1,13 +1,27 @@
+'use client'
 import { ThreeDCard } from "./ThreeDCard";
+import { motion } from "framer-motion";
+
 
 
 const OurServices = () => {
   return (
-    <div className="bg-transparent ">
+    <div className="bg-transparent "
+    
+    >
       {/* Add padding to account for the fixed navbar */}
-      <div className="text-center text-4xl md:text-6xl lg:text-8xl h-[150px] py-5 pt-32 pb-16">
+      <motion.div className="text-center text-4xl md:text-6xl lg:text-8xl h-[150px] py-5 pt-32 pb-16"
+      
+      variants={{
+        hidden:{opacity:0,y:30},
+        visible:{opacity:1,y:0}
+      }}
+      initial='hidden'
+      animate="visible"
+      transition={{duration:0.5, delay:0.25}}
+      >
         Our Services
-      </div>
+      </motion.div>
       <div className="lg:flex justify-around mt-10">
         
           <ThreeDCard
