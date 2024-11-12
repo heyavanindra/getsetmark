@@ -1,5 +1,6 @@
 const Domains = () => {
   return (
+    // make this a grid
     <div className="bg-gray-950 py-6 px-3">
       <div className="flex flex-col mt-8 font-mono">
         <div className="text-2xl px-3">Achieve your business goals</div>
@@ -13,7 +14,7 @@ const Domains = () => {
         </p>
       </div>
       <div className="">
-
+     // add a moving card
       </div>
     </div>
   );

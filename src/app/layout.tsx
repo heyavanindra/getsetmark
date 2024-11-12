@@ -35,7 +35,7 @@ export default function RootLayout({
       <Navbar></Navbar>
         {children}
       {/* o */}
-     
+     <Footer></Footer>
         
       </body>
     </html>

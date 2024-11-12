@@ -33,7 +33,7 @@ const WebDevHero = () => {
             <h1 className="mt-20 md:mt-36 text-4xl md:text-6xl font-bold">
               Web Development Services
             </h1>
-            <h2 className=" text-xl lg:text-3xl font-light mt-5 ">
+            <h2 className=" text-xl lg:text-3xl font-light mt-5">
               e design and build industry-leading web-based products that bring
               value to your customers, delivered with compelling UX.
             </h2>
@@ -44,12 +44,14 @@ const WebDevHero = () => {
         </div>
       </div>
 
-      <div className="text-white font-mono lg:grid grid-cols-2 lg:">
-        <div className="flex gap-y-3 lg:justify-center p-6 mt-28 grid-cols-1">
-          <h2 className="text-xl">What are</h2>{" "}
-          <h2 className="text-xl text-green-900 ml-3 lg:ml-3">
-            web development services?
-          </h2>
+      <div className="text-white font-mono grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex lg:justify-center p-6 mt-28 ">
+          <div className="text-2xl flex flex-col-reverse">
+            What are
+            <div className="text-2xl text-green-900 ml-3 lg:ml-3">
+              web development services?
+            </div>
+          </div>
         </div>
         <div className=" mb-12 px-6 py-2 grid-cols-1 lg:p-6 lg:mt-28">
           <p>
